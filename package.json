@@ -1,0 +1,29 @@
+{
+  "name": "naitokosuke",
+  "version": "0.1.0",
+  "description": "Self-introduction CLI of naitokosuke",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naitokosuke/me.git"
+  },
+  "bin": {
+    "naitokosuke": "./dist/cli.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "vp pack",
+    "prepack": "vp pack"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vite-plus": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=26"
+  }
+}
