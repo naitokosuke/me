@@ -19,5 +19,7 @@ jobs:
           node-version-file: .node-version
           cache: true
       - run: vp check
-      # npm bundled with Node 26 supports trusted publishing; `prepack` runs `vp pack`
+      # build before npm reads package.json so the bin file exists
+      - run: vp pack
+      # npm bundled with Node 26 supports trusted publishing
       - run: npm publish
