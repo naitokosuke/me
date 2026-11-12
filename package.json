@@ -8,7 +8,7 @@
     "url": "git+https://github.com/naitokosuke/me.git"
   },
   "bin": {
-    "naitokosuke": "./dist/cli.mjs"
+    "naitokosuke": "dist/cli.mjs"
   },
   "files": [
     "dist"
