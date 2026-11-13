@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      figlet:
+        specifier: ^1.12.0
+        version: 1.12.0
     devDependencies:
       '@types/node':
         specifier: ^26.6.6
@@ -725,6 +729,10 @@ packages:
     resolution: {integrity: sha512-XWAtwJ6OHO+tj0EKCs0Y2UamnyOxseZWltU4x2U2wh8g4AigdjwvtUjvLP2tqkA/avxHEtzxNaqGq/YGNwckKg==}
     engines: {node: '>=18'}
 
+  commander@14.0.3:
+    resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
+    engines: {node: '>=20'}
+
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
 
@@ -760,6 +768,11 @@ packages:
 
   fflate@0.8.3:
     resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
+
+  figlet@1.12.0:
+    resolution: {integrity: sha512-Ith3WsUi0N/EqGt+0/F6XnWhT04sohhH2tT0Dq7GdUmWbMTIoCbg2Jq9qKggmTO62ST5kRCfB311EmIMbizGyA==}
+    engines: {node: '>= 17.0.0'}
+    hasBin: true
 
   flatted@3.4.4:
     resolution: {integrity: sha512-5+ybhBZANEJxaH3X5evAFatUxLfEHSr7n6kYJ+1Qd0mUqr4eu9gIf6GDbWHf8RJijHrjjO8G+la14SlL2SeS1Q==}
@@ -1464,6 +1477,8 @@ snapshots:
 
   chai@6.3.0: {}
 
+  commander@14.0.3: {}
+
   convert-source-map@2.0.0: {}
 
   dequal@2.0.3: {}
@@ -1485,6 +1500,10 @@ snapshots:
       picomatch: 4.0.7
 
   fflate@0.8.3: {}
+
+  figlet@1.12.0:
+    dependencies:
+      commander: 14.0.3
 
   flatted@3.4.4: {}
 

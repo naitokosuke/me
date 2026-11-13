@@ -18,6 +18,9 @@
     "build": "vp pack",
     "prepack": "vp pack"
   },
+  "dependencies": {
+    "figlet": "^1.12.0"
+  },
   "devDependencies": {
     "@types/node": "^26.6.6",
     "typescript": "^7.0.2",
